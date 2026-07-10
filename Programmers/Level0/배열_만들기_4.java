@@ -8,7 +8,7 @@ class Solution {
         // List<Integer> stk = new LinkedList<>();
         Stack<Integer> stk = new Stack<>();
         int i = 0;
-        
+
         while (i < arr.length) {
             // int lastIdx = stk.size() - 1;
 
@@ -21,7 +21,7 @@ class Solution {
                 stk.pop();
             }
         }
-        
+
         return stk.stream().mapToInt(Integer::intValue).toArray();
     }
 }
