@@ -1,4 +1,4 @@
-// 최솟값 구하기
+-- 최솟값 구하기
 
 SELECT DATETIME
 FROM ANIMAL_INS

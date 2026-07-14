@@ -1,6 +1,6 @@
-// 물고기 종류 별 대어 찾기
+-- 물고기 종류 별 대어 찾기
 
-// 상관 서브 쿼리
+-- 상관 서브 쿼리
 SELECT 
     fi.id,
     fni.fish_name,
@@ -15,7 +15,7 @@ WHERE length = (
 )
 ORDER BY fi.id;
 
-// 집계 후 조인
+-- 집계 후 조인
 SELECT
     fi.id,
     fni.fish_name,
