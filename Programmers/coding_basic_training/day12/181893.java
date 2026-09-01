@@ -1,3 +1,5 @@
+package Programmers.coding_basic_training.day12;
+
 /*
  * 배열 조각하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/181893
@@ -26,6 +28,8 @@ class _181893 {
                 .toArray();
     }
 
+    // optimized solution
+    // 필요한 인덱스를 찾아서 배열을 한 번만 자르는 방식
     public int[] solutionOpt(int[] arr, int[] query) {
         int startIndex = 0;
         int endIndex = arr.length - 1;
@@ -39,6 +43,7 @@ class _181893 {
                 startIndex += cutIndex;
             }
         }
+
         return Arrays.copyOfRange(arr, startIndex, endIndex + 1);
     }
 }

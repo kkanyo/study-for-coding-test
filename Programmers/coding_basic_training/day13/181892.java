@@ -3,7 +3,7 @@
  * https://school.programmers.co.kr/learn/courses/30/lessons/181892
 */
 
-package Programmers.coding_basic_training.day13_list;
+package Programmers.coding_basic_training.day13;
 
 import java.util.Arrays;
 

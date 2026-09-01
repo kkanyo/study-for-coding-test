@@ -1,11 +1,16 @@
-package Programmers.Level2;
+package Programmers.algorithm_high_score_kit.stack_queue;
+
+/*
+    기능개발
+    https://school.programmers.co.kr/learn/courses/30/lessons/42586
+ */
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
-public class 기능개발 {
+class _42586 {
     public List<Integer> solution(int[] progresses, int[] speeds) {
         Queue<Integer> deployQueue = new ArrayDeque<>();
         for (int i = 0; i < progresses.length; i++) {

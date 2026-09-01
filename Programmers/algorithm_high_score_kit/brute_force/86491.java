@@ -1,9 +1,14 @@
-package Programmers.Level1;
+package Programmers.algorithm_high_score_kit.brute_force;
+
+/*
+    최소직사각형
+    https://school.programmers.co.kr/learn/courses/30/lessons/86491
+ */
 
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class 최소직사각형 {
+class _86491 {
     public int solution(int[][] sizes) {
         PriorityQueue<Integer> rowQueue = new PriorityQueue<>(Collections.reverseOrder());
         PriorityQueue<Integer> columnQUeue = new PriorityQueue<>(Collections.reverseOrder());

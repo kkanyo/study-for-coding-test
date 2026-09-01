@@ -1,3 +1,5 @@
+package Programmers.coding_basic_training.day12_list;
+
 /*
  * 2의 영역
  * https://school.programmers.co.kr/learn/courses/30/lessons/181894
@@ -24,20 +26,26 @@ class _181894 {
         return Arrays.copyOfRange(arr, firstTargetIndex, lastTargetIndex + 1);
     }
 
-    public int[] solutionOps(int[] arr) {
+    // optimized solution
+    // 2의 인덱스를 찾아서 배열을 한 번만 자르는 방식
+    public int[] solutionOpㅅ(int[] arr) {
         int firstTargetIndex = -1;
         int lastTargetIndex = -1;
+
         for (int index = 0; index < arr.length; index++) {
             if (arr[index] == 2) {
                 if (firstTargetIndex == -1) {
                     firstTargetIndex = index;
                 }
+
                 lastTargetIndex = index;
             }
         }
+
         if (firstTargetIndex == -1) {
             return new int[] { -1 };
         }
+
         return Arrays.copyOfRange(arr, firstTargetIndex, lastTargetIndex + 1);
     }
 }

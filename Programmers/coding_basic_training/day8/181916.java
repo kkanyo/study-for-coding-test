@@ -1,3 +1,10 @@
+package Programmers.coding_basic_training.day8;
+
+/*
+    주사위 게임 3
+    https://school.programmers.co.kr/learn/courses/30/lessons/181916
+ */
+
 import java.util.*;
 
 class Solution {

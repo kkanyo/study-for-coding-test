@@ -1,8 +1,13 @@
-package Programmers.Level1;
+package Programmers.algorithm_high_score_kit.brute_force;
+
+/*
+    모의고사
+    https://school.programmers.co.kr/learn/courses/30/lessons/42840
+ */
 
 import java.util.PriorityQueue;
 
-public class 모의고사 {
+class _42840 {
     public int[] solution(int[] answers) {
         final int[][] ANSWERS_STUDENT = {
                 { 1, 2, 3, 4, 5 },
@@ -21,7 +26,7 @@ public class 모의고사 {
                 if (answers[indexAnswers] == ANSWERS_STUDENT[i][indexStudent]) {
                     scoresStudent[i]++;
                 }
-                
+
                 indexStudents[i] = indexStudent + 1;
             }
 

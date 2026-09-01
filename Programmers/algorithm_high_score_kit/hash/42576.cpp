@@ -1,8 +1,13 @@
+/*
+    완주하지 못한 선수
+    https://school.programmers.co.kr/learn/courses/30/lessons/42576
+ */
+
 #include "stdc++.h"
 
 using namespace std;
 
-string solution(vector<string> participant, vector<string> completion) {
+string solution_hash(vector<string> participant, vector<string> completion) {
     string answer = "";
     map<string, int> mapParticipant;                //string: participant name
                                                     //int: the number of non-complete participant (nums)
@@ -27,3 +32,23 @@ string solution(vector<string> participant, vector<string> completion) {
     
     return answer;
 }
+
+string solution_sort(vector<string> participant, vector<string> completion) {
+    string answer = "";
+    sort(participant.begin(), participant.end());
+    sort(completion.begin(), completion.end());
+    
+    auto j = participant.begin();
+    for (auto i : completion) {     //compare two vectors
+        if (i != *j) {              //sorting order is not same means
+            answer = *j;            //that participant do not complete the marathon
+            return answer;
+        }
+        j++;
+    }
+    
+    answer = *j;                    //Participant of last is do not complete the marathon
+    
+    return answer;
+}
+

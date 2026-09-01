@@ -1,6 +1,11 @@
-package Programmers.Level2;
+package Programmers.algorithm_high_score_kit.stack_queue;
 
-public class 올바른_괄호 {
+/*
+    올바른 괄호
+    https://school.programmers.co.kr/learn/courses/30/lessons/12909
+ */
+
+class _12909 {
     boolean solution(String s) {
         int bracketsCount = 0;
         for (char c : s.toCharArray()) {

@@ -1,10 +1,15 @@
-package Programmers.Level1;
+package Programmers.algorithm_high_score_kit.sort;
+
+/*
+    K번째수
+    https://school.programmers.co.kr/learn/courses/30/lessons/42748
+*/
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class K번째수 {
+class _42748 {
     public int[] solution(int[] array, int[][] commands) {
         List<Integer> answer = new ArrayList<>();
         List<Integer> arrayList = Arrays.stream(array)

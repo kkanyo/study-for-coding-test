@@ -1,6 +1,13 @@
+package Programmers.coding_basic_training.day7;
+
+/*
+    배열 만들기 4
+    https://school.programmers.co.kr/learn/courses/30/lessons/181918
+ */
+
 import java.util.*;
 
-class Solution {
+class _181918 {
     public int[] solution(int[] arr) {
         // 주석 처리 된 부분은 처음에 LinkedList를 사용하여 풀이했던 부분
         // 마지막 원소만 삽입/삭제하는 경우에는 LinkedList보다 Stack이 더 효율적

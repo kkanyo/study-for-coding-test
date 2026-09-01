@@ -1,10 +1,15 @@
-package Programmers.Level2;
+package Programmers.algorithm_high_score_kit.heap;
+
+/*
+    더 맵게
+    https://school.programmers.co.kr/learn/courses/30/lessons/42626
+ */
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.stream.Collectors;
 
-public class 더_맵게 {
+class _42626 {
     public int solution(int[] scoville, int K) {
         int answer = 0;
 
