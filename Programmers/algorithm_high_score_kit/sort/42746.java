@@ -1,10 +1,15 @@
-package Programmers.Level2;
+package Programmers.algorithm_high_score_kit.sort;
+
+/*
+    가장 큰 수
+    https://school.programmers.co.kr/learn/courses/30/lessons/42746
+*/
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class 가장_큰_수 {
+class _42746 {
     public String solution(int[] numbers) {
         List<String> numberStringList = Arrays.stream(numbers)
                 .mapToObj(String::valueOf)

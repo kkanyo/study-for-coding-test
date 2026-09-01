@@ -1,10 +1,15 @@
-package Programmers.Level2;
+package Programmers.algorithm_high_score_kit.dfs_bfs;
+
+/*
+    타겟 넘버
+    https://school.programmers.co.kr/learn/courses/30/lessons/43165
+*/
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class 타겟_넘버 {
+class _43165 {
     public int solution(int[] numbers, int target) {
         boolean[] visited = new boolean[numbers.length + 1];
         List<Integer>[] numberList = new ArrayList[numbers.length + 1];

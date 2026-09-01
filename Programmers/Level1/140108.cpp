@@ -1,3 +1,8 @@
+/*
+    문자열 나누기
+    https://school.programmers.co.kr/learn/courses/30/lessons/140108
+*/
+
 #include <string>
 
 using namespace std;

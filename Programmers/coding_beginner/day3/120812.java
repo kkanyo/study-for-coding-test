@@ -1,29 +1,35 @@
 package Programmers.coding_beginner.day3;
+
+/*
+    최빈값 구하기
+    https://school.programmers.co.kr/learn/courses/30/lessons/120812
+*/
+
 import java.util.Map;
 import java.util.HashMap;
 
-class Solution {
+class _120812 {
     public int solution(int[] array) {
         int answer = 0;
         int maxCount = 0;
-        
+
         // 처음 나의의 풀이
         // HashMap<Integer, Integer> arrayMap = new HashMap<>();
         // for (var elem : array) {
-        //     int count = arrayMap.getOrDefault(elem, 0);            
-        //     arrayMap.put(elem, count+1);
+        // int count = arrayMap.getOrDefault(elem, 0);
+        // arrayMap.put(elem, count+1);
         // }
-        
+
         // for (var elem : arrayMap.keySet()) {
-        //     if (maxCount < arrayMap.get(elem)) {
-        //         maxCount = arrayMap.get(elem);
-        //         answer = elem;
-        //         continue;
-        //     }
-            
-        //     if (maxCount == arrayMap.get(elem)) {
-        //         answer = -1;
-        //     }
+        // if (maxCount < arrayMap.get(elem)) {
+        // maxCount = arrayMap.get(elem);
+        // answer = elem;
+        // continue;
+        // }
+
+        // if (maxCount == arrayMap.get(elem)) {
+        // answer = -1;
+        // }
         // }
 
         // 다른 사람 풀이 참고
@@ -38,10 +44,10 @@ class Solution {
             } else if (maxCount == count) {
                 answer = -1;
             }
-            
+
             map.put(elem, count);
         }
-        
-        return answer;        
+
+        return answer;
     }
 }

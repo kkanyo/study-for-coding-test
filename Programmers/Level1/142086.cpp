@@ -1,3 +1,8 @@
+/*
+    가장 가까운 같은 글자
+    https://school.programmers.co.kr/learn/courses/30/lessons/142086
+*/
+
 #include <string>
 #include <vector>
 #include <unordered_map>
